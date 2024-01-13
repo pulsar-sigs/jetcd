@@ -73,11 +73,12 @@ errorproneAnnotations = { module = "com.google.errorprone:error_prone_annotation
 errorproneJavac = { module = "com.google.errorprone:javac", version = "9+" }
 
 [bundles]
-grpc     = [ "grpcCore", "grpcNetty", "grpcProtobuf", "grpcStub", "grpcGrpclb", "grpcUtil", "javaxAnnotation"]
+grpc     = [ "grpcCore", "grpcNetty", "grpcProtobuf", "grpcStub", "grpcGrpclb", "grpcUtil"]
 grpcTest = [ "grpcInprocess"]
 log4j    = [ "log4jApi", "log4jCore", "log4jSlf4j", "log4j12" ]
 mockito  = [ "mockitoCore", "mockitoJunit" ]
 testing  = ["junit", "assertj", "mockitoCore", "mockitoJunit"]
+javax    = [ "javaxAnnotation" ]
 
 
 [plugins]
