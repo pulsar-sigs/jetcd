@@ -37,6 +37,7 @@ jobs:
     needs:
       - checks
     strategy:
+      fail-fast: false
       matrix:
         java-version:
           - 11
